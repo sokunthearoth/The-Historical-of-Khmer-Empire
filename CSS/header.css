@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 0px 0 25px 25px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+.image-logo img{
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 75px;
+}
+.header a {
+    display: block;
+    float: left;
+    font-family: 'Suwannaphum', cursive;
+    font-size: 21px;
+    padding: 20px 16px 20px 16px;
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: black;
+    background-color: white;
+}
