@@ -1,3 +1,21 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    box-shadow: 3px slategray;
+    background-color:  white;
+    max-width: 1500px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.the_early{
+    display: block;
+}
+.funan{
+    display: block;
+    float: right;
 }
