@@ -1,14 +1,16 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-   
+.history{
+    position: relative;
     box-shadow: 3px slategray;
     background-color:  white;
     max-width: 1500px;
     width: 100%;
+    margin-top: 70%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -18,4 +20,53 @@ body{
 .funan{
     display: block;
     float: right;
+}
+
+
+/*------- for footer ---------*/
+
+.footer{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    /* top: 100vmin; */
+}
+.description, .contact, .Follow{
+    float: left;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: 30%;
+}
+.description p, .contact p{
+    padding: 16px 35px;
+}
+.description img{
+    width: 50%;
+}
+.contact,.contact h1{
+    margin-top: 1.5%;
+    width: 40%;
+}
+.contact h2, .Follow{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+.contact .P{
+    text-align: left;    
+}
+.contact img{
+    float: left;
+    margin: 16px;
+    width: 5%;
+}
+.Follow img{
+    margin: 10px;
+    float: left;
+    width: 15%;
+}
+.location{
+    margin-left: 20%;
 }
