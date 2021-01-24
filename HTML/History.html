@@ -2,55 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../CSS/header.css">
-    <link rel="stylesheet" href="./../CSS/history.css">
-    <link rel="stylesheet" href="./../CSS/footer.css">
-    <title>History Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../CSS/header.css">
+  <link rel="stylesheet" href="./../CSS/history.css">
+  <title>History Page</title>
 </head>
 
-<body>
-
+<body onload="slider()">
+  <div>
     <div class="header">
-        <a href="Home.html">ទំព័រដើម</a>
-        <a href="History.html">ប្រវត្តិសាស្រ្ត</a>
-        <a href="Civiization.html">អរិយធម៌</a>
-        <a href="Art.html">សិល្ប៍</a>
-        <a href="about.html">អំពីយើង</a>
+      <div class="logo">
+        <img src="./../Image/logo.png" alt="logo">
+      </div>
+      <div class="slider">
+        <img src="./../Image/history cover 4.jpg" id="slideImg">
+      </div>
+      <div class="navbar">
+        <a href="Home.html">HOME</a>
+        <a href="History.html">HISTORY</a>
+        <div class="drop">
+          <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
+          <div class="down">
+            <a href="#">CIVILIZATION</a>
+            <a href="#">CULTURE</a>
+          </div>
+        </div>
+        <div class="drop">
+          <a href="Art.html" ​​ class="nav">ART</a>
+          <div class="down">
+            <a href="#">DANCE OF CAMBODIA</a>
+            <a href="#">THEATRE OF CAMBODIA</a>
+          </div>
+        </div>
+        <a href="about.html">ABOUT</a>
+        <a href="index.html">CONTACT</a>
+        <div class="menu-icon">
+          <img src="./../Image/search icon.png" alt="search">
+          <img src="./../Image/user-profile.png" alt="user">
+          <img src="./../Image/menu.png" alt="menu">
+        </div>
+      </div>
+      <p>Welcome to KHMER EMPIRE</p>
+
+      <script>
+        var slideImg = document.getElementById("slideImg");
+        var Image = Array(
+          "./../Image/history cover 4.jpg",
+          "./../Image/history 5.jpg",
+          "./../Image/history.jpg",
+          "./../Image/por pot history 3.jpg",
+          "./../Image/history 4.jpg",
+          "./../Image/Por Pot history 2.jpg",
+          "./../Image/por pot history.jpg"
+        );
+        var len = Image.length;
+        var i = 0;
+        function slider() {
+          if (i > len - 1) {
+            i = 0;
+          }
+          slideImg.src = Image[i];
+          i++;
+          setTimeout('slider()', 5000);
+        }
+      </script>
     </div>
-    <div class="era">
-        <h1 class="con" style="text-align: center;">History of camboda</h1>
-    </div>
-    <div class="history">
-        <div class="the_early">
-            <img src="../Image/early-his.jpg" alt="the_early" style="width: 400px; float:right; margin:50px;">
-            <h2 style="margin-top:150px;">1.The Prehistory of Cambodia</h2>
-            <p style=" font-size: 20px; display: block;">The Early history of Cambodia follows the prehistoric and
-                protohistoric
-                development of Cambodia<br>
-                as a country in mainland Southeast Asia. Thanks to archaeological work carried out since 2009 <br>
-                this can now be traced back to the Neolithic period. As excavation sites have become more <br>
-                numerous and modern dating methods are applied, settlement traces of all stages of human civil
-                <br>development from neolithic Hunter-gatherer groups to organized preliterate societies are documented
-                in the region.
+    <div class="G-content">
+      <div class="era">
+        <h1 class="con" style="text-align: center;">History of cambodia</h1>
+      </div>
+      <div class="history">
+        <div class="G1">
+          <div class="image">
+            <img src="../Image/early-his.jpg" alt="the_early">
+          </div>
+          <div class="S1">
+            <h2>1.The Prehistory of Cambodia</h2>
+            <p style=" font-size: 20px; display: block; ">The Early history of Cambodia follows the prehistoric and
+              protohistoric
+              development of Cambodia<br>
+              as a country in mainland Southeast Asia. Thanks to archaeological work carried out since 2009 <br>
+              this can now be traced back to the Neolithic period. As excavation sites have become more <br>
+              numerous and modern dating methods are applied, settlement traces of all stages of human civil
+              <br>development from neolithic Hunter-gatherer groups to organized preliterate societies are documented
+              in the region.
             </p>
-        </div>
-        <div class="funan">
-
-            <img src="../Image/funan.jpg" alt="funan" style="width: 300px;margin-top: 200px; display: inline-block;">
-            <h2>2.Funan Kingdom(1st Century-550/627)</h2>
-            <p style="font-size: 20px;"> Funan (Chinese call Chữ Nôm: 夫南, Khmer: ហ្វូណន, Vietnamese: Phù Nam) or Nokor
-                Phnom (Khmer: នគរភ្នំ,<br>
-                "Mountain Kingdom") was the name given by Chinese cartographers, geographers and writers to an ancient<br>Indianised state or, rather a loose network of states (Mandala)located in mainland Southeast Asia<br>centered on the Mekong Delta that existed from the first to sixth century CE. The name is found in<br>Chinese historical texts describing the kingdom, and the most extensive descriptions are largelybased<br>on the report of two Chinese diplomats, Kang Tai and Zhu Ying, representing the Wu Kingdom whosojourned<br>in Funan in the mid-3rd century AD.
-                Funan is known in the modern languages of the region as វ្នំ Vnom (Old Khmer) or នគរភ្នំ Nokor Phnom<br>(Khmer), ฟูนาน (Funan) (Thai), and Phù Nam (Vietnamese), however, the name Funan is not found in any<br>texts of local origin from the period, and it is not known what name the people of Funan gave to their<br> polity. Some scholars argued that ancient Chinese scholars transcribed the word Funan from a word<br> related to the Khmer word bnaṃ or vnaṃ (modern: phnoṃ, meaning "mountain"), others however thought that<br>Funan may not be a transcription at all- rather it meant what it says in Chinese.<br> Like the very name of the kingdom, the ethno-linguistic nature of the people is the subject of much<br>
-                discussion among specialists. The leading hypotheses are that the Funanese were mostly Mon–Khmer, or<br>that they were mostly Austronesian, or that they constituted a multi-ethnic society. The available<br> evidence is inconclusive on this issue. Michael Vickery has said that, even though identification ofthe<br>language of Funan is not possible, the evidence strongly suggests that the population was Khmer.</p>
-
+          </div>
 
         </div>
-        <div class="chenla"></div>
+        <!-- <div class="G2">
+
+          <div class="S2">
+            <p>
+              Funan is known in the modern languages of the region as វ្នំ Vnom (Old Khmer) or នគរភ្នំ Nokor Phnom
+              (Khmer), ฟูนาน (Funan) (Thai), and Phù Nam (Vietnamese), however, the name Funan is not found in any texts
+              of local origin from the period, and it is not known what name the people of Funan gave to their polity.
+              Some scholars argued that ancient Chinese scholars transcribed the word Funan from a word related to the
+              Khmer word bnaṃ or vnaṃ (modern: phnoṃ, meaning "mountain"), others however thought that Funan may not be
+              a transcription at all- rather it meant what it says in Chinese.
+            </p>
+          </div>
+          <div class="image">
+            <img src="../Image/funan.jpg" alt="funan">
+          </div>
+        </div>
+        <div class="G3">
+          <div class="image">
+            <img src="../Image/chenla.jpg" alt="Chenla era">
+          </div>
+          <div class="S3">
+            Chenla or Zhenla (simplified Chinese: 真腊; traditional Chinese: 真臘; pinyin: Zhēnlà; Wade–Giles: Chen-la;
+            Khmer: ចេនឡា; Vietnamese: Chân Lạp) is the Chinese designation for the successor polity of the Kingdom of
+            Funan preceding the Khmer Empire that existed from around the late sixth to the early ninth century in
+            Indochina. The name was still used in the 13th century by the Chinese envoy Zhou Daguan, author of The
+            Customs of Cambodia. It appears on the Mao Kun map. However, modern historiography applies the name
+            exclusively to the period from the late 6th to the early ninth century. It is dubious if "Chenla" ever
+            existed as a unitary kingdom or if this is a misconception by Chinese chronists. Most modern historians
+            assert that "Chenla" was in fact just a series of loose and temporary confederations of principalities.
+          </div>
+        </div>
         <div class="khmer_empire"></div>
         <div class="angkor_post"></div>
         <div class="jatomok"></div>
@@ -60,8 +133,40 @@
         <div class="khmer_republic"></div>
         <div class="khmer_rouge"></div>
         <div class="vn_occupation"></div>
-        <div class="modern_cambo"></div>
+        <div class="modern_cambo"></div> -->
+      </div>
     </div>
+  </div>
+
+
+
+  <div class="footer">
+    <div class="description">
+      <a href="Home.html"><img src="./../Image/logo 2.png"></a>
+      <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of
+        Cambodia, a country of wonders.</p>
+    </div>
+    <div class="contact">
+      <h2>CONTACT INFO</h2>
+      <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p> <br>
+      <div class="location">
+        <img src="./../Image/phone icon.jpg">
+        <p class="P">(+855)16794681</p>
+        <img src="./../Image/gmail icon.png">
+        <p class="P">sokunthearoth.suon@gmail.com</p>
+        <img src="./../Image/location icon.png">
+        <p class="P">28 saint 368, Phnom Penh, Cambodia</p>
+      </div>
+    </div>
+    <div class="Follow" style="margin-top: 5%;">
+      <h2>FOLLOW US</h2>
+      <div class="link" style="margin-left: 26%; margin-top: 30px;">
+        <a href="#"><img src="./../Image/facebook.png"></a>
+        <a href="#"><img src="./../Image/twitter.png"></a>
+        <a href="#"><img src="./../Image/linkedin.png"></a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

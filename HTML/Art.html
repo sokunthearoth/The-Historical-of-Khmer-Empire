@@ -4,23 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../CSS/header.css">
+    <script src="./../JS/header.js"></script>
     <link rel="stylesheet" href="./../CSS/art.css">
-    <link rel="stylesheet" href="./../CSS/footer.css">
     <title>Art Page</title>
 </head>
-<body>
-    
-    <div class="header">
-        <a href="Home.html">ទំព័រដើម</a>
-        <a href="History.html">ប្រវត្តិសាស្រ្ត</a>
-        <a href="Civiization.html">អរិយធម៌</a>
-        <a href="Art.html">សិល្ប៍</a>
-        <a href="about.html">អំពីយើង</a>
-    </div>
-    <div class="Content">
+<body onload="slider()">
+    <div>
+        <div class="header">
+            <div class="logo">
+                <img src="./../Image/logo.png" alt="logo">
+            </div>
+            <div class="slider">
+                <img src="./../Image/art." id="slideImg">
+            </div>
+            <div class="navbar">
+                <a href="Home.html">HOME</a>
+                <a href="History.html">HISTORY</a>
+                <div class="drop">
+                  <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
+                  <div class="down">
+                    <a href="#">CIVILIZATION</a>
+                    <a href="#">CULTURE</a>
+                  </div>
+                </div>
+                <div class="drop">
+                  <a href="Art.html" ​​ class="nav">ART</a>
+                  <div class="down">
+                    <a href="#">DANCE OF CAMBODIA</a>
+                    <a href="#">THEATRE OF CAMBODIA</a>
+                  </div>
+                </div>
+                <a href="about.html">ABOUT</a>
+                <a href="index.html">CONTACT</a>
+                <div class="menu-icon">
+                  <img src="./../Image/search icon.png" alt="search">
+                  <img src="./../Image/user-profile.png" alt="user">
+                  <img src="./../Image/menu.png" alt="menu">
+                </div>
+            </div>
+
+                <p>Welcome to KHMER EMPIRE</p>
+
+                <script>
+                  var slideImg = document.getElementById("slideImg");
+                  var Image = Array(
+                      "./../Image/art.jpg",
+                      "./../Image/cover4.jpg",
+                      "./../Image/Art Traditional.jpg",
+                      "./../Image/Art 5.jpg",
+                      "./../Image/Art 7.jpg"
+                  );
+                  var len = Image.length;
+                  var i = 0;
+                  function slider(){
+                      if(i > len-1){
+                          i = 0;
+                      }
+                      slideImg.src = Image[i];
+                      i++;
+                      setTimeout('slider()',5000);
+                  }
+                </script>
+        </div>
         
+        <div class="G-Content">
+          <div class="title">
+            <h1>ART OF CAMBODIA</h1>
+            <p>The history of Cambodian art stretches back centuries to ancient times, but the most famous period is undoubtedly the Khmer art of the Khmer Empire (802–1431), especially in the area around Angkor and the mainly 12th-century temple-complex of Angkor Wat, initially Hindu and subsequently Buddhist. After the collapse of the empire these and other sites were abandoned and overgrown, allowing much of the era's stone carving and architecture to survive to the present day. Traditional Cambodian arts and crafts include textiles, non-textile weaving, silversmithing, stone carving, lacquerware, ceramics, wat murals, and kite-making.
+
+              Beginning in the mid-20th century, a tradition of modern art began in Cambodia, though in the later 20th century both traditional and modern arts declined for several reasons, including the killing of artists by the Khmer Rouge. The country has experienced a recent artistic revival due to increased support from governments, NGOs, and foreign tourists.
+              
+              In pre-colonial Cambodia, art and crafts were generally produced either by rural non-specialists for practical use or by skilled artists producing works for the Royal Palace. In modern Cambodia, many artistic traditions entered a period of decline or even ceased to be practiced, but the country has experienced a recent artistic revival as the tourist market has increased and governments and NGOs have contributed to the preservation of Cambodian culture.</p>
+              <hr style="background-color: rgb(53, 53, 53);">
+          </div>
+          <div class="Tm-content">
+            
+          </div>
+
+        </div>
+    </div>
+    <div class="footer">
+      <div class="description">
+        <a href="Home.html"><img src="./../Image/logo 2.png"></a>
+        <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of Cambodia, a country of wonders.</p>
+      </div>
+      <div class="contact">
+        <h2>CONTACT INFO</h2>
+        <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p> <br>
+        <div class="location">
+          <img src="./../Image/phone icon.jpg">
+          <p class="P">(+855)16794681</p>
+          <img src="./../Image/gmail icon.png">
+          <p class="P">sokunthearoth.suon@gmail.com</p>
+          <img src="./../Image/location icon.png">
+          <p class="P">28 saint 368, Phnom Penh, Cambodia</p>
+        </div>
+      </div>
+      <div class="Follow" style="margin-top: 5%;">
+        <h2>FOLLOW US</h2>
+        <div class="link" style="margin-left: 26%; margin-top: 30px;">
+          <a href="#"><img src="./../Image/facebook.png"></a>
+          <a href="#"><img src="./../Image/twitter.png"></a>
+          <a href="#"><img src="./../Image/linkedin.png"></a>
+        </div>
+      </div>
     </div>
 </body>
 </html>

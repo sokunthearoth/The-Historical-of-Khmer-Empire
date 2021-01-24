@@ -1,18 +1,139 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-   
-    box-shadow: 3px slategray;
-    background-color:  white;
-    max-width: 1500px;
+.G-content{
+    position: relative;
     width: 100%;
+    max-width: 1500px;
+    margin-top: 50%;
     margin-right: auto;
     margin-left: auto;
 }
-.the_early{
+.history{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 20vmin;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.image img{
+    position: relative;
     display: block;
+    width: 50%;
+    height: auto;
+}
+.G1{
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+/* .G2{
+    position: relative;
+    width: 100%;
+    top: 80vmin;
+    padding-left: 20px;
+    padding-right: 20px;  
+}
+.G3{
+    position: relative;
+    width: 100%;
+    top: 165vmin;
+    padding-left: 20px;
+    padding-right: 20px; 
+} */
+.S1 {
+    position: relative;
+    width: 60%;
+    top: 10vmin;
+    left: 75vmin;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5vmin 10vmin 15vmin 10vmin;
+    box-shadow: 0px 15px 42px rgba(36, 36, 36, 0.2);
+    z-index: 1;
+   
+}
+/* 
+.S2{
+    float: left;
+    top: 70vmin;
+    left: 75vmin;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5vmin 10vmin 15vmin 10vmin;
+    box-shadow: 0px 15px 42px rgba(36, 36, 36, 0.2);
+    z-index: 1;
+}
+.S3{
+    position: absolute;
+    top: 40vmin;
+    left: 75vmin;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5vmin 10vmin 15vmin 10vmin;
+    box-shadow: 0px 15px 42px rgba(36, 36, 36, 0.2);
+    z-index: 1;
+} */
+.G1 img ,.G2 img , .G3 img{
+    position: relative;
+    float: left;
+    display: block;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 45%;
 }
 
+
+/*------- for footer ---------*/
+
+.footer{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+}
+.description, .contact, .Follow{
+    float: left;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: 30%;
+}
+.description p, .contact p{
+    padding: 16px 35px;
+}
+.description img{
+    width: 50%;
+}
+.contact,.contact h1{
+    margin-top: 1.5%;
+    width: 40%;
+}
+.contact h2, .Follow{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+.contact .P{
+    text-align: left;    
+}
+.contact img{
+    float: left;
+    margin: 16px;
+    width: 5%;
+}
+.Follow img{
+    margin: 10px;
+    float: left;
+    width: 15%;
+}
+.location{
+    margin-left: 20%;
+}
