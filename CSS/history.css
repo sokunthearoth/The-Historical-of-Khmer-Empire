@@ -7,89 +7,38 @@
 .G-content{
     position: relative;
     width: 100%;
-    max-width: 1500px;
-    margin-top: 50%;
+    max-width: 1800px;
+    margin-top: 55%;
     margin-right: auto;
     margin-left: auto;
+    font-size: 25px;
 }
-.history{
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 20vmin;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+.Title{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(65, 69, 73);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
 }
-.image img{
-    position: relative;
-    display: block;
-    width: 50%;
-    height: auto;
+.pre-content{
+    height: 300px;
+    text-align: center;
+    margin-top: 20px;
+    padding-left:20% ;
+    padding-right: 20%;
 }
-.G1{
-    position: relative;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    float: left;
+.image{
+ 
+    margin-left:35% ;
+    margin-right: 35%;
+    margin-top: 50px;
 }
-/* .G2{
-    position: relative;
-    width: 100%;
-    top: 80vmin;
-    padding-left: 20px;
-    padding-right: 20px;  
+.the_era{
+    padding-left:15% ;
+    padding-right: 15%;
+ 
 }
-.G3{
-    position: relative;
-    width: 100%;
-    top: 165vmin;
-    padding-left: 20px;
-    padding-right: 20px; 
-} */
-.S1 {
-    position: relative;
-    width: 60%;
-    top: 10vmin;
-    left: 75vmin;
-    border-radius: 10px;
-    text-align: left;
-    padding: 5vmin 10vmin 15vmin 10vmin;
-    box-shadow: 0px 15px 42px rgba(36, 36, 36, 0.2);
-    z-index: 1;
-   
-}
-/* 
-.S2{
-    float: left;
-    top: 70vmin;
-    left: 75vmin;
-    border-radius: 10px;
-    text-align: left;
-    padding: 5vmin 10vmin 15vmin 10vmin;
-    box-shadow: 0px 15px 42px rgba(36, 36, 36, 0.2);
-    z-index: 1;
-}
-.S3{
-    position: absolute;
-    top: 40vmin;
-    left: 75vmin;
-    border-radius: 10px;
-    text-align: left;
-    padding: 5vmin 10vmin 15vmin 10vmin;
-    box-shadow: 0px 15px 42px rgba(36, 36, 36, 0.2);
-    z-index: 1;
-} */
-.G1 img ,.G2 img , .G3 img{
-    position: relative;
-    float: left;
-    display: block;
-    margin-bottom: 60px;
-    border-radius: 10px;
-    margin: 20px;
-    width: 45%;
-}
-
 
 /*------- for footer ---------*/
 

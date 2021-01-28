@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 .tm-content{
     position: relative;
     display: block;
@@ -10,6 +11,7 @@
     margin-top: 50%;
     margin-right: auto;
     margin-left: auto;
+    font-size: 25px;
 }
 
 .title{
@@ -18,8 +20,38 @@
     color: rgb(65, 69, 73);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
+    
+}
+.intro{
+   
+    height: 300px;
+    text-align: center;
+    margin-top: 20px;
+    padding-left:20% ;
+    padding-right: 20%;
+}
+.picture{
+ 
+    margin-left:35% ;
+    margin-right: 35%;
+    margin-top: 50px;
+}
+.paragraph{
+    padding-left:15% ;
+    padding-right: 15%;
+ 
 }
 
+.picture5{
+    margin-left:25% ;
+    margin-right: 35%;
+    margin-top: 50px;
+}
+.paragraph5{
+    padding-left:15% ;
+    padding-right: 15%;
+    margin-bottom: 100px;
+}
 
 
 /* ----------- FOR FOOTER ------------ */
