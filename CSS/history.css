@@ -8,12 +8,9 @@
     position: relative;
     width: 100%;
     max-width: 1800px;
-    margin-top: 55%;
     margin-right: auto;
     margin-left: auto;
-    font-family: sans-serif;
     font-size: 25px;
-    color: rgb(70, 68, 68);
 }
 .Title{
     text-align: center;
@@ -29,9 +26,6 @@
     margin-top: 20px;
     padding-left:20% ;
     padding-right: 20%;
-}
-h2{
-    margin-top: 20px;
 }
 .image{
  

@@ -1,124 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../CSS/header.css">
-    <link rel="stylesheet" href="./../CSS/about.css">
-    <title>About Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <script src="./../JS/header_navbar.js"></script>
+  <link rel="stylesheet" href="./../CSS/header.css">
+  <link rel="stylesheet" href="./../CSS/about.css">
+  <title>About Page</title>
 </head>
+
 <body onload="slider()">
-    <div class="header">
+  <div class="header">
+    <div class="cover">
+      <div class="slider">
+        <img src="./../Image/cover 1.jpg" id="slideImg">
+      </div>
+      <p>Welcome to KHMER EMPIRE</p>
+      <script>
+        var slideImg = document.getElementById("slideImg");
+        var Image = Array(
+          "./../Image/cover 1.jpg",
+          "./../Image/cover 2.jpg",
+          "./../Image/cover 3.jpg",
+          "./../Image/cover 7.jpg",
+          "./../Image/cover 6.jpg"
+        );
+        var len = Image.length;
+        var i = 0;
+        function slider() {
+          if (i > len - 1) {
+            i = 0;
+          }
+          slideImg.src = Image[i];
+          i++;
+          setTimeout('slider()', 5000);
+        }
+      </script>
+      <div class="navbar">
         <div class="logo">
-            <img src="./../Image/logo.png" alt="logo">
+          <a href="Home.html"><img src="./../Image/logo.png" alt="logo"></a>
         </div>
-        <div class="slider">
-            <img src="./../Image/cover1.jpg" id="slideImg">
+
+        <div class="link">
+          <a href="Home.html">HOME</a>
+          <a href="History.html">HISTORY</a>
+          <div class="drop">
+            <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
+            <div class="down">
+              <a href="#">CIVILIZATION</a>
+              <a href="#">CULTURE</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a href="Art.html" ​​ class="nav">ART</a>
+            <div class="down">
+              <a href="#">DANCE OF CAMBODIA</a>
+              <a href="#">THEATRE OF CAMBODIA</a>
+            </div>
+          </div>
+          <a href="about.html">ABOUT</a>
+          <a href="index.html">CONTACT</a>
         </div>
-        <div class="navbar">
+
+        <div class="menu-icon">
+          <form>
+            <input type="text" name="search" placeholder="Search..">
+          </form>
+          <img src="./../Image/user-profile.png" alt="user">
+          <img src="./../Image/menu.png" alt="menu" class="" onclick="openNav()">
+
+          <div class="menu" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="Home.html">HOME</a>
-            <a href="History.html">HISTORY</a>
-            <div class="drop">
-              <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
-              <div class="down">
-                <a href="#">CIVILIZATION</a>
-                <a href="#">CULTURE</a>
-              </div>
-            </div>
-            <div class="drop">
-              <a href="Art.html" ​​ class="nav">ART</a>
-              <div class="down">
-                <a href="#">DANCE OF CAMBODIA</a>
-                <a href="#">THEATRE OF CAMBODIA</a>
-              </div>
-            </div>
+            <a href="History.html">HISTORY</a>z
+            <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
+            <a href="Art.html" ​​ class="nav">ART</a>
             <a href="about.html">ABOUT</a>
             <a href="index.html">CONTACT</a>
-            <div class="menu-icon">
-              <img src="./../Image/search icon.png" alt="search">
-              <img src="./../Image/user-profile.png" alt="user">
-              <img src="./../Image/menu.png" alt="menu">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="about">
+    <div class="content">
+      <div class="title">
+        <h1>ABOUT US</h1>
+      </div>
+      <div class="History">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="G">
+          <div class="P1">
+            <img src="../Image/roth.jpg" width="250px" class="pic">
+            <h1 class="p2">Suon Sokunthearoth</h1>
+            <h2>Leader & Designer</h2>
+            <p>My name is Suon Sokunthearoth, I'm 18 years old, I study at high school in grade 12 and studied at sabai
+              code as Computer Science Programming student.</p>
+            <div class="icon">
+              <a href="https://web.facebook.com/?_rdc=1&_rdr" ​ target="_blank">
+                <img src="../Image/fbicon.png" width="32px" class="facebook_Icon">
+              </a>
+              <a href="https://www.messenger.com/t/100031888552651" ​target="_blank">
+                <img src="../Image/messenger-icon.png" width="30px" class="messenger_Icon">
+              </a>
+              <a href="https://www.instagram.com/__r_o_t_h__sokun/" ​ target="_blank">
+                <img src="../Image/INSTAGRAM-512.png" width="30px" class="instagram_icon">
+              </a>
             </div>
           </div>
-            <p>Welcome to KHMER EMPIRE</p>
-  
-            <script>
-              var slideImg = document.getElementById("slideImg");
-              var Image = Array(
-                "./../Image/cover 1.jpg",
-                "./../Image/cover 2.jpg",
-                "./../Image/cover 3.jpg",
-                "./../Image/cover 7.jpg",
-                "./../Image/cover 6.jpg"
-              );
-              var len = Image.length;
-              var i = 0;
-              function slider(){
-                  if(i > len-1){
-                      i = 0;
-                  }
-                  slideImg.src = Image[i];
-                  i++;
-                  setTimeout('slider()',5000);
-              }
-            </script>
-        </div>
-    </div>
-    <div class="about">
-        <div class="content">
-          <div class="title">
-              <h1>ABOUT US</h1>
+          <div class="P1">
+            <img src="../Image/chingsien.jpg" width="250px" class="pic">
+            <h1 class="p2">Thri Chingsien</h1>
+            <h2>Developer & Designer</h2>
+            <p>My name is Thri Ching Sien, I'm 17 years old, I study at high school in grade 11 and studied at sabai code
+              as Computer Science Programming student.</p>
+            <div class="icon">
+              <a href="https://web.facebook.com/chingsien.thri.5" ​ target="_blank">
+                <img src="../Image/fbicon.png" width="32px" class="facebook_Icon">
+              </a>
+              <a href="https://www.messenger.com/t/100031888552651" ​target="_blank">
+                <img src="../Image/messenger-icon.png" width="30px" class="messenger_Icon">
+              </a>
+              <a href="https://www.instagram.com/__r_o_t_h__sokun/" ​ target="_blank">
+                <img src="../Image/INSTAGRAM-512.png" width="30px" class="instagram_icon">
+              </a>
+            </div>
           </div>
-          <div class="History">
-              <div class="box1"></div>
-              <div class="box2"></div>
-              <div class="P1">
-                  <img src="../Image/roth.jpg" width="250px" class="pic">
-                  <h1 class="p2">Suon Sokunthearoth</h1>
-                  <h2>Leader & Designer</h2>
-                  <p>My name is Suon Sokunthearoth, I'm 18 years old, I study at high school in grade 12 and studied at sabai code as Computer Science Programming student.</p>
-                  <div class="icon">
-                    <a href="https://web.facebook.com/?_rdc=1&_rdr"​ target="_blank">
-                      <img src="../Image/fbicon.png" width="32px" class="facebook_Icon"> 
-                    </a>
-                    <a href="https://www.messenger.com/t/100031888552651" ​target="_blank">
-                      <img src="../Image/messenger-icon.png" width="30px" class="messenger_Icon"> 
-                    </a>
-                    <a href="https://www.instagram.com/__r_o_t_h__sokun/"​ target="_blank">
-                      <img src="../Image/INSTAGRAM-512.png" width="30px" class="instagram_icon">
-                    </a>
-                  </div>
-              </div>
-              <div class="P1">
-                  <img src="../Image/chingsien.jpg" width="250px" class="pic"> 
-                  <h1 class="p2">Thri Chingsien</h1>
-                  <h2>Developer & Designer</h2>
-                  <p>My name is Thri Ching Sien, I'm 17 years old, I study at high school in grade 11 and studied at sabai code as Computer Science Programming student.</p>
-                  <div class="icon">
-                    <a href="https://web.facebook.com/chingsien.thri.5"​ target="_blank">
-                      <img src="../Image/fbicon.png" width="32px" class="facebook_Icon"> 
-                    </a>
-                    <a href="https://www.messenger.com/t/100031888552651" ​target="_blank">
-                      <img src="../Image/messenger-icon.png" width="30px" class="messenger_Icon"> 
-                    </a>
-                    <a href="https://www.instagram.com/__r_o_t_h__sokun/"​ target="_blank">
-                      <img src="../Image/INSTAGRAM-512.png" width="30px" class="instagram_icon">
-                    </a>
-                  </div>
-              </div>
         </div>
+
+        <hr style="background-color: rgb(53, 53, 53);">
+        <!-- <div class="question">
+          <p style="font-size: 30px;color: rgb(63, 62, 62);">-Why we create this ?</p>
+          <p style="font-size: 25px;color: rgb(63, 62, 62);">=></p>
+          <p style="font-size: 30px;color: rgb(63, 62, 62);">-What is the Purpose?</p>
+          <p style="font-size: 25px;color: rgb(63, 62, 62);">=></p>
+        </div> -->
+      </div>
     </div>
-    
+
     <div class="footer">
       <div class="description">
         <a href="Home.html"><img src="./../Image/logo 2.png"></a>
-        <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of Cambodia, a country of wonders.</p>
+        <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of
+          Cambodia, a country of wonders.</p>
       </div>
       <div class="contact">
         <h2>CONTACT INFO</h2>
-        <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p> <br>
+        <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p>
+        <br>
         <div class="location">
           <img src="./../Image/phone icon.jpg">
           <p class="P">(+855)16794681</p>
@@ -130,7 +166,7 @@
       </div>
       <div class="Follow" style="margin-top: 5%;">
         <h2>FOLLOW US</h2>
-        <div class="link" style="margin-left: 26%; margin-top: 30px;">
+        <div class="social" style="margin-left: 26%; margin-top: 30px;">
           <a href="#"><img src="./../Image/facebook.png"></a>
           <a href="#"><img src="./../Image/twitter.png"></a>
           <a href="#"><img src="./../Image/linkedin.png"></a>
@@ -138,4 +174,5 @@
       </div>
     </div>
 </body>
+
 </html>

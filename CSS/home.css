@@ -6,84 +6,78 @@
     position: relative;
     width: 100%;
     max-width: 1500px;
-    margin-top: 45%;
     margin-right: auto;
     margin-left: auto;
 }
 .tm-content{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 20vmin;
+    display: block;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+
 }
 .text{
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
-    text-align: center;
-    top: 20vmin;
-    font-size: 25px;
-    font-family: 'Balsamiq Sans', cursive;
-    padding: 10px;
-}
-.P1 img ,.P2 img , .P3 img{
-    position: relative;
-    float: left;
     display: block;
-    margin-bottom: 60px;
-    border-radius: 10px;
-    margin: 20px;
-    width: 45%;
+    text-align: center;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    padding: 50px;
 }
-.P2 img{
-    left: 600px;
+.text p{
+    padding: 30px;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 2.5vh;
+    color: rgb(51, 51, 51);
 }
-.P1{
+
+.P1, .P2, .P3{
     position: relative;
+    overflow: hidden;
+    display: flex;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    float: left;
 }
-.P2{
-    position: relative;
-    width: 100%;
-    top: 80vmin;
-    padding-left: 20px;
-    padding-right: 20px;  
+.G1, .G2, .G3{
+    text-align: justify;
+    padding: 5vmin 10vmin 15vmin 10vmin;
+    font-size: 20px;
+    margin: 30px;
+    line-height: 1.5;
+    width: 50%;
 }
-.P3{
-    position: relative;
-    width: 100%;
-    top: 165vmin;
-    padding-left: 20px;
-    padding-right: 20px; 
+.image{
+    width: 40%;
 }
 .image img{
-    position: absolute;
+    /* padding: 10vmin 10vmin 15vmin 10vmin; */
+    position: relative;
     display: block;
-    width: 50%;
+    border-radius: 10px;
+    width: 100%;
     height: auto;
 }
 .h1{
     margin-bottom: 20px;
 }
-.G1 p, .G2 p, .G3 p{
+.vl {
+    border-left: 1px solid rgb(146, 146, 146);
+    height: auto;
+    margin: 0px 50px;
+}
+
+/* .G1 p, .G2 p, .G3 p{
     margin-top: 20px;
     font-size: 20px;
 }
-/* @media (max-width: 620px){
+@media (max-width: 620px){
     .G1 p, .G2 p, .G3 p{
         margin-top: 10px;
         font-size: 2vw !important;
     }
 } */
-.G1 , .G3 {
-    position: absolute;
-    top: 10vmin;
-    left: 75vmin;
+
+/* .G1 , .G3 {
+    position: relative;
+    left: 80vmin;
     background: white;
     border-radius: 10px;
     text-align: left;
@@ -94,8 +88,7 @@
     font-family: 'Balsamiq Sans', cursive;
 }
 .G2{
-    position: absolute;
-    top: 10vmin;
+    position: relative;
     left: 5vmin;
     background: white;
     border-radius: 10px;
@@ -106,30 +99,80 @@
     z-index: 1;
     font-family: 'Balsamiq Sans', cursive; 
 }
-.G3{
+/* .G3{
     top: 10vmin;
-}
+} */
 .btn{
     position: absolute;
     outline: none;
     padding: 12px 25px 12px 25px;
     border-radius: 50px;
     border: 1px solid rgb(53, 53, 53);
-    margin: 25px;
+    margin: 25px 0px;
     cursor: pointer;
 }
-/* .btn{
+.star{
     position: relative;
-    display: block;
     
+}
+.rating {
+    margin: auto;
+    width: 400px;
+}
+.rating > * {
+    float: right;
+}
+@-webkit-keyframes pulse {
+    50% {
+      color: #5e5e5e;
+      text-shadow: 0 0 15px #777777;
+    }
+}
+@keyframes pulse {
+    50% {
+        color: #5e5e5e;
+        text-shadow: 0 0 15px #777777;
+    }
+}
+.rating label {
+    height: 40px;
+    width: 20%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+  
+.rating label::after{
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing:antialiased;
+    position: absolute;
+    content: "☆";
+    color: #444;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 80px;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+}
+/* add hover effect */
+.rating label:hover::after{
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+}
+.rating input{
+    display: none;
+}
+.rating input:checked + label::after,
+.rating input:checked ~ label::after{
+    content: "★";
+    color: #f9bf3b;
+    text-shadow: 0 0 20px #f9bf3b;
+      
+}
 
-    background-color: white;
-    font-size: 15px;
-    color: rgb(51, 50, 50);
-    z-index: 2;
-    top: 52vmin;
-    left: 108vmin;
-} */
 
 
 
@@ -144,7 +187,7 @@
     display: block;
     background-color: rgb(19, 19, 19);
     width: 100%;
-    top: 300vmin;
+    top: 20vmin;
 }
 .description, .contact, .Follow{
     float: left;

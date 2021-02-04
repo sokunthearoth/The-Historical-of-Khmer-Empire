@@ -1,116 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../CSS/header.css">
-    <script src="./../JS/header.js"></script>
-    <link rel="stylesheet" href="./../CSS/art.css">
-    <title>Art Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../CSS/header.css">
+  <script src="./../JS/header_navbar.js"></script>
+  <link rel="stylesheet" href="./../CSS/art.css">
+  <title>Art Page</title>
 </head>
+
 <body onload="slider()">
-    <div>
-        <div class="header">
-            <div class="logo">
-                <img src="./../Image/logo.png" alt="logo">
-            </div>
-            <div class="slider">
-                <img src="./../Image/art." id="slideImg">
-            </div>
-            <div class="navbar">
-                <a href="Home.html">HOME</a>
-                <a href="History.html">HISTORY</a>
-                <div class="drop">
-                  <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
-                  <div class="down">
-                    <a href="#">CIVILIZATION</a>
-                    <a href="#">CULTURE</a>
-                  </div>
-                </div>
-                <div class="drop">
-                  <a href="Art.html" ​​ class="nav">ART</a>
-                  <div class="down">
-                    <a href="#">DANCE OF CAMBODIA</a>
-                    <a href="#">THEATRE OF CAMBODIA</a>
-                  </div>
-                </div>
-                <a href="about.html">ABOUT</a>
-                <a href="index.html">CONTACT</a>
-                <div class="menu-icon">
-                  <img src="./../Image/search icon.png" alt="search">
-                  <img src="./../Image/user-profile.png" alt="user">
-                  <img src="./../Image/menu.png" alt="menu">
-                </div>
-            </div>
-
-                <p>Welcome to KHMER EMPIRE</p>
-
-                <script>
-                  var slideImg = document.getElementById("slideImg");
-                  var Image = Array(
-                      "./../Image/art.jpg",
-                      "./../Image/cover4.jpg",
-                      "./../Image/Art Traditional.jpg",
-                      "./../Image/Art 5.jpg",
-                      "./../Image/Art 7.jpg"
-                  );
-                  var len = Image.length;
-                  var i = 0;
-                  function slider(){
-                      if(i > len-1){
-                          i = 0;
-                      }
-                      slideImg.src = Image[i];
-                      i++;
-                      setTimeout('slider()',5000);
-                  }
-                </script>
-        </div>
-        
-        <div class="G-Content">
-          <div class="title">
-            <h1>ART OF CAMBODIA</h1>
-            <p>The history of Cambodian art stretches back centuries to ancient times, but the most famous period is undoubtedly the Khmer art of the Khmer Empire (802–1431), especially in the area around Angkor and the mainly 12th-century temple-complex of Angkor Wat, initially Hindu and subsequently Buddhist. After the collapse of the empire these and other sites were abandoned and overgrown, allowing much of the era's stone carving and architecture to survive to the present day. Traditional Cambodian arts and crafts include textiles, non-textile weaving, silversmithing, stone carving, lacquerware, ceramics, wat murals, and kite-making.
-
-              Beginning in the mid-20th century, a tradition of modern art began in Cambodia, though in the later 20th century both traditional and modern arts declined for several reasons, including the killing of artists by the Khmer Rouge. The country has experienced a recent artistic revival due to increased support from governments, NGOs, and foreign tourists.
-              
-              In pre-colonial Cambodia, art and crafts were generally produced either by rural non-specialists for practical use or by skilled artists producing works for the Royal Palace. In modern Cambodia, many artistic traditions entered a period of decline or even ceased to be practiced, but the country has experienced a recent artistic revival as the tourist market has increased and governments and NGOs have contributed to the preservation of Cambodian culture.</p>
-              <hr style="background-color: rgb(53, 53, 53);">
-          </div>
-          <div class="Tm-content">
-            
-          </div>
-
-        </div>
-    </div>
-    <div class="footer">
-      <div class="description">
-        <a href="Home.html"><img src="./../Image/logo 2.png"></a>
-        <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of Cambodia, a country of wonders.</p>
+  <div class="header">
+    <div class="cover">
+      <div class="slider">
+        <img src="./../Image/cover 1.jpg" id="slideImg">
       </div>
-      <div class="contact">
-        <h2>CONTACT INFO</h2>
-        <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p> <br>
-        <div class="location">
-          <img src="./../Image/phone icon.jpg">
-          <p class="P">(+855)16794681</p>
-          <img src="./../Image/gmail icon.png">
-          <p class="P">sokunthearoth.suon@gmail.com</p>
-          <img src="./../Image/location icon.png">
-          <p class="P">28 saint 368, Phnom Penh, Cambodia</p>
+      <script>
+        var slideImg = document.getElementById("slideImg");
+        var Image = Array(
+          "./../Image/art.jpg",
+          "./../Image/cover4.jpg",
+          "./../Image/Art Traditional.jpg",
+          "./../Image/Art 5.jpg",
+          "./../Image/Art 7.jpg"
+        );
+        var len = Image.length;
+        var i = 0;
+        function slider() {
+          if (i > len - 1) {
+            i = 0;
+          }
+          slideImg.src = Image[i];
+          i++;
+          setTimeout('slider()', 5000);
+        }
+      </script>
+      <div class="navbar">
+        <div class="logo">
+          <a href="Home.html"><img src="./../Image/logo.png" alt="logo"></a>
         </div>
-      </div>
-      <div class="Follow" style="margin-top: 5%;">
-        <h2>FOLLOW US</h2>
-        <div class="link" style="margin-left: 26%; margin-top: 30px;">
-          <a href="#"><img src="./../Image/facebook.png"></a>
-          <a href="#"><img src="./../Image/twitter.png"></a>
-          <a href="#"><img src="./../Image/linkedin.png"></a>
+
+        <div class="link">
+          <a href="Home.html">HOME</a>
+          <a href="History.html">HISTORY</a>
+          <div class="drop">
+            <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
+            <div class="down">
+              <a href="#">CIVILIZATION</a>
+              <a href="#">CULTURE</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a href="Art.html" ​​ class="nav">ART</a>
+            <div class="down">
+              <a href="#">DANCE OF CAMBODIA</a>
+              <a href="#">THEATRE OF CAMBODIA</a>
+            </div>
+          </div>
+          <a href="about.html">ABOUT</a>
+          <a href="index.html">CONTACT</a>
         </div>
+
+        <div class="menu-icon">
+          <form>
+            <input type="text" name="search" placeholder="Search..">
+          </form>
+          <img src="./../Image/user-profile.png" alt="user"
+            onclick="document.getElementById('id01').style.display='block'">
+          <img src="./../Image/menu.png" alt="menu" class="" onclick="openNav()">
+
+          <div class="menu" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Home.html">HOME</a>
+            <a href="History.html">HISTORY</a>z
+            <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
+            <a href="Art.html" ​​ class="nav">ART</a>
+            <a href="about.html">ABOUT</a>
+            <a href="index.html">CONTACT</a>
+          </div>
+        </div>
+
       </div>
     </div>
+
+  </div>
+
+  <div class="G-Content">
+    <div class="title">
+      <h1>ART OF CAMBODIA</h1>
+      <p>The history of Cambodian art stretches back centuries to ancient times, but the most famous period is
+        undoubtedly the Khmer art of the Khmer Empire (802–1431), especially in the area around Angkor and the mainly
+        12th-century temple-complex of Angkor Wat, initially Hindu and subsequently Buddhist. After the collapse of the
+        empire these and other sites were abandoned and overgrown, allowing much of the era's stone carving and
+        architecture to survive to the present day. Traditional Cambodian arts and crafts include textiles, non-textile
+        weaving, silversmithing, stone carving, lacquerware, ceramics, wat murals, and kite-making.
+
+        Beginning in the mid-20th century, a tradition of modern art began in Cambodia, though in the later 20th century
+        both traditional and modern arts declined for several reasons, including the killing of artists by the Khmer
+        Rouge. The country has experienced a recent artistic revival due to increased support from governments, NGOs,
+        and foreign tourists.
+
+        In pre-colonial Cambodia, art and crafts were generally produced either by rural non-specialists for practical
+        use or by skilled artists producing works for the Royal Palace. In modern Cambodia, many artistic traditions
+        entered a period of decline or even ceased to be practiced, but the country has experienced a recent artistic
+        revival as the tourist market has increased and governments and NGOs have contributed to the preservation of
+        Cambodian culture.</p>
+
+
+      <div class="parallax">
+        <h1 style=" color: white; padding: 12% 10px 10px 10px;">ART OF CAMBODIA 7 TYPE</h1>
+      </div>
+
+      <div class="blog">
+        <h2>You can click here to read detail.</h2>
+        <div class="blog-img">
+          <a href="#b_1">
+            <img src="./../Image/architecture 3.jfif" alt="">
+            <h3>ARCHITECTURE</h3>
+          </a>
+
+        </div>
+        <div class="blog-img">
+          <a href="#b_2">
+            <img src="./../Image/chom-lak-khmer.jpg" alt="">
+            <h3>SCULPTURE</h3>
+          </a>
+        </div>
+        <div class="blog-img">
+          <a href="#b_3">
+            <img src="./../Image/art-drawing.jpg" alt="">
+            <h3>DRAWING</h3>
+          </a>
+        </div>
+        <div class="blog-img">
+          <a href="#b_4">
+            <img src="./../Image/khmer-music.jpg" alt="">
+            <h3>MUSIC</h3>
+          </a>
+        </div>
+        <div class="blog-img">
+          <a href="#b_5">
+            <img src="./../Image/book.jpg" alt="">
+            <h3>LITERATURE</h3>
+          </a>
+        </div>
+        <div class="blog-img">
+          <a href="#b_6">
+            <img src="./../Image/gettyimages-1172245316-612x612.jpg" alt="">
+            <h3>DANCE</h3>
+          </a>
+        </div>
+        <div class="blog-img">
+          <a href="#b_7">
+            <img src="./../Image/Teather-khmer.jpeg" alt="">
+            <h3>THEATRE</h3>
+          </a>
+        </div>
+      </div>
+
+      <br>
+      <hr style="background-color: rgb(53, 53, 53);">
+    </div>
+    <div class="Tm-content">
+      <h1 id="b_1">ART ARCHITECTURE OF CAMBODIA</h1>
+      <div class="blog-1">
+        <div class="img1">
+          <img src="./../Image/history of cambodia.jpg" alt="pic">
+        </div>
+        <div class="vl"></div>
+        <div class="blog-scrip1">
+          <p>
+            Khmer architecture (Khmer: ស្ថាបត្យកម្មខ្មែរ), also known as Angkorian architecture is the architecture
+            produced by the Khmers during the Angkor period of the Khmer Empire from approximately the later half of the
+            8th
+            century CE to the first half of the 15th century CE.
+
+            The architecture of the Indian rock-cut temples, particularly the sculptures, were widely adopted in South
+            Indian, and Indianised architecture of Cambodian, Annamese (Khmer) and Javanese temples (of the Greater
+            India).
+            In any study of Angkorian architecture, the emphasis is necessarily on religious architecture, since all the
+            remaining Angkorian buildings are religious in nature. During the period of Angkor, only temples and other
+            religious buildings were constructed of stone. Non-religious buildings such as dwellings were constructed of
+            perishable materials such as wood, and so have not survived. The religious architecture of Angkor has
+            characteristic structures, elements, and motifs, which are identified in the glossary below. Since a number
+            of
+            different architectural styles succeeded one another during the Angkorean period, not all of these features
+            were
+            equally in evidence throughout the period. Indeed, scholars have referred to the presence or absence of such
+            features as one source of evidence for dating the remains.
+          </p>
+        </div>
+      </div>
+      <h1 id="b_2">ART SCULPTURE OF CAMBODIA</h1>
+      <div class="blog-2">
+        <div class="blog-scrip2">
+          <p>
+            Khmer sculpture refers to the stone sculpture of the Khmer Empire, which ruled a territory based on modern
+            Cambodia, but rather larger, from the 9th to the 13th century. The most celebrated examples are found in
+            Angkor, which served as the seat of the empire, captivating in its civility, refinement and delight, open to
+            all forms of life, is made in the image of the country and its inhabitants. Nevertheless, among the arts of
+            the Far East, few are as accessible to the Western temperament. Its profound beauty impresses itself upon
+            the spirit and sensibility without requiring prior study. Its sobriety, its horror of excess and its sense
+            of balance and harmony allow it to attain universal value.” Thus wrote Madeleine Giteau, the distinguished
+            member of the École française d’Extrême-Orient, in the introduction to her book Les Khmers in 1965.
+            Currently, the largest museums of the West dedicate entire halls to Khmer sculpture, not to mention the
+            enormous exhibition which took place first at the Galeries Nationales du Grand Palais in Paris and later at
+            the National Gallery of Art in Washington in 1997.
+          </p>
+        </div>
+        <div class="vl"></div>
+        <div class="img2">
+          <img src="./../Image/history 1.jpg" alt="pic">
+        </div>
+      </div>
+      <h1 id="b_3">ART DRAWING OF CAMBODIA</h1>
+      <div class="blog-1">
+        <div class="img1">
+          <img src="./../Image/drawing art.jpg" alt="pic">
+        </div>
+        <div class="vl"></div>
+        <div class="blog-scrip1">
+          <p>
+            Because of destruction during recent war, few historic wat murals remain in Cambodia. In the 1960s,
+            art historians Guy and Jacqueline Nafilyan photographed 19th-century murals, providing a record of this lost
+            cultural heritage. The best known surviving murals are at the Silver Pagoda in Phnom Penh, Wat Rajabo in
+            Siem Reap province, and Wat Kompong Tralach Leu in Kompong Chhnang Province. In the last decade, wat murals
+            have seen a resurgence, but Cambodia's surviving older murals are generally more refined and detailed.
+          </p>
+        </div>
+      </div>
+      <h1 id="b_4">ART MUSIC OF CAMBODIA</h1>
+      <p class="paragraph">
+        The music of Cambodia is derived from a mesh of cultural traditions dating back to the ancient Khmer Empire,
+        India, China and the original indigenous tribes living in the area before the arrival of Indian and Chinese
+        travelers. With the rapid Westernization of popular music, Cambodian music has incorporated elements from
+        music around the world through globalization.
+      </p>
+
+      <div class="blog-2">
+        <div class="blog-scrip2">
+          <h2>Folk and classical music</h2>
+          <p class="paragraph" style="text-align: justify;">
+            Cambodian Art music is highly influenced by ancient forms as well as Hindu forms. Religious dancing, many of
+            which depict stories and ancient myths, are common in Cambodian culture. Some dances are accompanied by a
+            pinpeat orchestra, which includes a ching (cymbal), roneat (bamboo xylophone), pai au (flute), sralai
+            (oboe), chapey (bass moon lute or banjo), gong (bronze gong), tro (fiddle), and various kinds of drums. Each
+            movement the dancer makes refers to a specific idea, including abstract concepts like today (pointing a
+            finger upwards). The 1950s saw a revival in classical dance, led by Queen Sisowath Kossamak Nearyrath.
+    
+            During the early 1970s, the Khmer Rouge of Cambodia committed genocide among the country's citizens. During
+            their reign, an estimated "90% of Cambodia's musicians, dancers, teachers, and instrument makers" were
+            killed, interrupting the transmission of cultural knowledge to following generations. The country has
+            been undergoing revival ever since, with those remaining trying to perform, teach, research, and document
+            what they can.
+    
+            The traditional music has had to compete with foreign music that has different tonal systems of scales and
+            pitch frequency. Lack of a formal written-system of music theory for Cambodian music lent to a perception
+            among modern Cambodians that the music was "incorrect", "out of tune" or "uncouth" when compared to western
+            music or to Chinese music. Traditional music still exists today, but its survival is the result of formal
+            government efforts(both the UNESCO and Cambodian) as well as academics. These have worked to organize
+            knowledge of the Cambodian music system and its distinct traditions.
+    
+            Sam-Ang Sam, a Cambodian ethnomusicologist, wrote a brief introduction to Cambodian music on his website,
+            part of his work to preserve knowledge Cambodian music and educating. He spoke of music in three different
+            areas of Cambodia: villages, the court and temples. In each setting, music had a formal function or was
+            entertainment. Village music included kar boran music for weddings, araak music for communication with
+            spirits, and "ayai repartee singing, chrieng chapey narrative, and yike and basakk theaters." Court music
+            had orchestras composed of a specific set of instruments. The pinpeat orchestra (consisting of gong chimes,
+            xylophones, a metallophone, oboe and drums) accompanied the formal dance, masked play, shadow play and
+            religious ceremonies. Less formal entertainment was played by a mohori orchestra. Temples had a "korng skor"
+            ensemble (gongs and drums), as well as a pinpeat orchestra.
+    
+            Additionally, Sam-Ang Sam differentiates between music made by the mainstream Cambodians (Cambodian music)
+            and the distinct music of ethnic minorities (part of the music of Cambodia). The latter includes music made
+            by people living in Rattanakiri and Mundulkiri provinces, the Koulen and Cardamom ranges, and the vicinity
+            "around the great lake (Tonle Sap)." Differences of language and religion help to create the separation
+            between the different cultures. Ethnic groups include upland Mon-Khmer language groups (Pnorng, Kuoy (Kui),
+            Por, Samre) whose music consists of "gong ensembles, drum ensembles, and free-reed mouth organs with gourd
+            windchests." Other ethnic groups include Cham, Chinese, Vietnamese who all potentially could have music from
+            their home cultures, but which is "unknown."
+          </p>
+        </div>
+        <div class="vl"></div>
+        <div class="img2" style="margin: 20% 0%;">
+          <img src="./../Image/music art.jpg" alt="pic">
+        </div>
+      </div>
+
+      <div class="blog-2">
+        <div class="blog-scrip2">
+          <h2>PINPEAT</h2>
+          <p>
+            One of the traditional music forms is Pinpeat (Khmer: ពិណពាទ្យ), in which an orchestra or musical ensemble
+            performs the ceremonial music of the royal courts and temples of Cambodia. The royal orchestra would
+            accompany the classical ballets, both male (Lokhon Khol) and female (Apsara), as well as the Grand Theater
+            of Shadows, the Sbek Thom. The orchestra consists of approximately nine or ten instruments, mainly wind
+            and percussion (including several varieties of xylophone and drums). It accompanies court dances, masked
+            plays, shadow plays, and religious ceremonies. The pinpeat is analogous to the piphat ensemble of
+            Thailand.
+
+            In recent years the instrument that gave the pinpeat its name, the pin, has been revived. The instrument was
+            lost or abandoned around the 13 century A.D.
+          </p>
+        </div>
+        <div class="vl"></div>
+        <div class="img2">
+          <img src="./../Image/music art.jpg" alt="pic">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="login">
+    <div id="id01" class="modal">
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p style="text-align: center; padding: 20px;">Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </div>
+  <div class="footer">
+    <div class="description">
+      <a href="Home.html"><img src="./../Image/logo 2.png"></a>
+      <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of
+        Cambodia, a country of wonders.</p>
+    </div>
+    <div class="contact">
+      <h2>CONTACT INFO</h2>
+      <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p> <br>
+      <div class="location">
+        <img src="./../Image/phone icon.jpg">
+        <p class="P">(+855)16794681</p>
+        <img src="./../Image/gmail icon.png">
+        <p class="P">sokunthearoth.suon@gmail.com</p>
+        <img src="./../Image/location icon.png">
+        <p class="P">28 saint 368, Phnom Penh, Cambodia</p>
+      </div>
+    </div>
+    <div class="Follow" style="margin-top: 5%;">
+      <h2>FOLLOW US</h2>
+      <div class="social" style="margin-left: 26%; margin-top: 30px;">
+        <a href="#"><img src="./../Image/facebook.png"></a>
+        <a href="#"><img src="./../Image/twitter.png"></a>
+        <a href="#"><img src="./../Image/linkedin.png"></a>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

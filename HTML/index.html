@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <script src="./../JS/header_navbar.js"></script>
   <link rel="stylesheet" href="./../CSS/header.css">
   <link rel="stylesheet" href="./../CSS/index.css">
+
   <title>Contact Page</title>
 </head>
+
 <body onload="slider()">
-    <div class="header">
-      <div class="logo">
-          <img src="./../Image/logo.png" alt="logo">
-      </div>
+  <div class="header">
+    <div class="cover">
       <div class="slider">
-          <img src="./../Image/cover 1.jpg" id="slideImg">
+        <img src="./../Image/cover 1.jpg" id="slideImg">
       </div>
+      <script>
+        var slideImg = document.getElementById("slideImg");
+        var Image = Array(
+          "./../Image/cover 1.jpg",
+          "./../Image/cover 2.jpg",
+          "./../Image/cover 3.jpg",
+          "./../Image/cover 7.jpg",
+          "./../Image/cover 6.jpg"
+        );
+        var len = Image.length;
+        var i = 0;
+        function slider() {
+          if (i > len - 1) {
+            i = 0;
+          }
+          slideImg.src = Image[i];
+          i++;
+          setTimeout('slider()', 5000);
+        }
+      </script>
       <div class="navbar">
+        <div class="logo">
+          <a href="Home.html"><img src="./../Image/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="link">
           <a href="Home.html">HOME</a>
           <a href="History.html">HISTORY</a>
           <div class="drop">
@@ -37,82 +65,108 @@
           </div>
           <a href="about.html">ABOUT</a>
           <a href="index.html">CONTACT</a>
-          <div class="menu-icon">
-            <img src="./../Image/search icon.png" alt="search">
-            <img src="./../Image/user-profile.png" alt="user">
-            <img src="./../Image/menu.png" alt="menu">
+        </div>
+
+        <div class="menu-icon">
+          <form>
+            <input type="text" name="search" placeholder="Search..">
+          </form>
+          <img src="./../Image/user-profile.png" alt="user">
+          <img src="./../Image/menu.png" alt="menu" class="" onclick="openNav()">
+
+          <div class="menu" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Home.html">HOME</a>
+            <a href="History.html">HISTORY</a>z
+            <a href="Civilization.html" ​ class="nav">CIVILIZATION</a>
+            <a href="Art.html" ​​ class="nav">ART</a>
+            <a href="about.html">ABOUT</a>
+            <a href="index.html">CONTACT</a>
           </div>
         </div>
-        <div class="cover">
-          <p>Welcome to KHMER EMPIRE</p>
-          <script>
-            var slideImg = document.getElementById("slideImg");
-            var Image = Array(
-                "./../Image/cover 1.jpg",
-                "./../Image/cover 2.jpg",
-                "./../Image/cover 3.jpg",
-                "./../Image/cover 7.jpg",
-                "./../Image/cover 6.jpg"
-            );
-            var len = Image.length;
-            var i = 0;
-            function slider(){
-                if(i > len-1){
-                    i = 0;
-                }
-                slideImg.src = Image[i];
-                i++;
-                setTimeout('slider()',5000);
+
+      </div>
+    </div>
+
+  </div>
+  <div class="tm-content">
+    <div class="title">
+      <h1>CONTACT US</h1>
+      <p></p>
+    </div>
+    <div class="f">
+      <form id="contact-form">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your Name..">
+
+        <label for="lname">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address..">
+
+        <label for="lname">Message</label>
+        <input class="message" type="text" id="message" name="message" placeholder="Write your something..">
+
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="description">
+      <a href="Home.html"><img src="./../Image/logo 2.png"></a>
+      <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of
+        Cambodia, a country of wonders.</p>
+    </div>
+    <div class="contact">
+      <h2>CONTACT INFO</h2>
+      <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p> <br>
+      <div class="location">
+        <img src="./../Image/phone icon.jpg">
+        <p class="P">(+855)16794681</p>
+        <img src="./../Image/gmail icon.png">
+        <p class="P">sokunthearoth.suon@gmail.com</p>
+        <img src="./../Image/location icon.png">
+        <p class="P">28 saint 368, Phnom Penh, Cambodia</p>
+      </div>
+    </div>
+    <div class="Follow" style="margin-top: 5%;">
+      <h2>FOLLOW US</h2>
+      <div class="social" style="margin-left: 26%; margin-top: 30px;">
+        <a href="#"><img src="./../Image/facebook.png"></a>
+        <a href="#"><img src="./../Image/twitter.png"></a>
+        <a href="#"><img src="./../Image/linkedin.png"></a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init("user_LoZeA5ofukgXB87lZXfbw");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      // confirm("Email JS work!")
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          // these IDs from the previous steps
+          emailjs.sendForm("service_vensirq", "khmer_empire", this).then(
+            function () {
+              alert("SUCCESS!");
+              document.getElementById("fname").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("message").value = "";
+
+            },
+            function (error) {
+              alert("FAILED...", error);
             }
-          </script>
-        </div>
-    </div>
-    <div class="tm-content">
-        <div class="title">
-            <h1>CONTACT US</h1>
-            <p></p>
-        </div>
-        <div class="form">
-            <form>
-                <label for="fname">Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your Name..">
-                
-                <label for="lname">Email</label>
-                <input type="text" id="lname" name="Phone number" placeholder="Your Email Address..">
-                        
-                <label for="lname">Message</label>
-                <input class="message" type="text" id="lname" name="Message" placeholder="Write your something..">
-        
-                    
-                <input type="submit" value="SUBMIT">
-            </form>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="description">
-          <a href="Home.html"><img src="./../Image/logo 2.png"></a>
-          <p>Khmer Empire is a website for sharing general knowledge about the history, culture, civilization, art of Cambodia, a country of wonders.</p>
-        </div>
-        <div class="contact">
-          <h2>CONTACT INFO</h2>
-          <p>No. 28,street 368, Sangkat Boeng Keng Kang. Near Toul Sleng Museum. Behind the old firefighter station</p> <br>
-          <div class="location">
-            <img src="./../Image/phone icon.jpg">
-            <p class="P">(+855)16794681</p>
-            <img src="./../Image/gmail icon.png">
-            <p class="P">sokunthearoth.suon@gmail.com</p>
-            <img src="./../Image/location icon.png">
-            <p class="P">28 saint 368, Phnom Penh, Cambodia</p>
-          </div>
-        </div>
-        <div class="Follow" style="margin-top: 5%;">
-          <h2>FOLLOW US</h2>
-          <div class="link" style="margin-left: 26%; margin-top: 30px;">
-            <a href="#"><img src="./../Image/facebook.png"></a>
-            <a href="#"><img src="./../Image/twitter.png"></a>
-            <a href="#"><img src="./../Image/linkedin.png"></a>
-          </div>
-        </div>
-    </div>
+          );
+        });
+    };
+  </script>
 </body>
+
 </html>

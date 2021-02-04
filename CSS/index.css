@@ -7,7 +7,6 @@
     box-shadow: 3px slategray;
     max-width: 1500px;
     width: 100%;
-    margin-top: 52%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -17,7 +16,7 @@
     color: rgb(65, 69, 73);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.form{
+.f{
     position: relative;
     background: white;
     border: 0.2px solid rgb(219, 218, 218);
@@ -31,10 +30,10 @@
     margin-bottom: 50px;
     font-family: 'Balsamiq Sans', cursive;
 }
-.form:hover{
+.f:hover{
     box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
 }
-input[type=text], select {
+input[name=name], select ,input[type=email], input[name=message]{
     width: 100%;
     padding: 20px ;
     margin: 10px;
@@ -57,6 +56,7 @@ input[type=submit] {
     padding: 14px ;
     margin: 5px;
     border: none;
+    outline: none;
     border-radius: 50px;
     cursor: pointer;
 }
