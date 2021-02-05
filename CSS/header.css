@@ -115,7 +115,7 @@
     z-index: 2;
 }
 .logo a img{
-    width: 50%;
+    width: 230px;
 }
 .cover p{
     position: absolute;
@@ -126,37 +126,7 @@
     font-size: 30px;
     color: rgb(10, 10, 10);
 }
-.btn-search .icon{
-    position: absolute;
-    float: left;
-    display: block;
-    width: 20px;
-    z-index: 3;
-    cursor: pointer;
-}
 
-input[name=search] {
-    cursor: pointer;
-    width: 25px;
-    float: left;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('./../Image/search\ icon.png');
-    background-position: 20px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 50px;
-    margin-left: 40%;
-    outline: none;
-}
-  
-input[name=search]:focus {
-    margin-left: 0%;
-    width: 50%;
-    border: 1px solid #ccc;
-}
 
 
 .menu {
@@ -203,11 +173,17 @@ input[name=search]:focus {
     .link{
         display: none;
     }
-    .main {
-      width: 80%;
-      padding: 0;
+    .logo, .menu-icon{
+        padding: 10px 10px;
+        width: 50%;
     }
-    .right {
-      width: 100%;
+    .slider{
+        height: 50%;
     }
-  }
+    .footer{
+        width: 100%;
+    }
+    .description, .contact, .Follow{
+        padding: 50%;
+    }
+}

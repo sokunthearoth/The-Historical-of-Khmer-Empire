@@ -4,24 +4,86 @@
 
 .tm-content{
     position: relative;
-    display: block;
-    background-color:  white;
-    max-width: 1800px;
     width: 100%;
+    max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 25px;
 }
 
 .title{
+    display: block;
     text-align: center;
-    padding: 20px;
-    color: rgb(65, 69, 73);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: grid;
-    
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    padding: 50px;
 }
-.intro{
+.title p{
+    padding: 45px;
+    line-height: 1.6;
+    font-size: 2.5vh;
+    color: rgb(51, 51, 51);
+}
+
+.outer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content{
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  /* border-radius: 12px; */
+  position: relative;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+}
+
+.image-box {
+  height: auto;
+  width: 50%;
+  border-radius: 12px;
+
+}
+.image-box img {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 12px;
+}
+
+.content .details{
+  width: 58%;
+  margin: 10px 0 20px 20px;
+  color: #092c3e;
+  
+}
+
+.content .details .name{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+}
+.content .details p{
+ font-size: 20px;
+ margin-top: 6px;
+ text-align: justify;
+ line-height: 1.5;
+ font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+/* .intro{
    
     height: 300px;
     text-align: center;
@@ -50,7 +112,7 @@
     padding-left:15% ;
     padding-right: 15%;
     margin-bottom: 100px;
-}
+} */
 
 
 /* ----------- FOR FOOTER ------------ */
