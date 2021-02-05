@@ -221,11 +221,11 @@
 </head>
 
 <body>
-    
+
     <div class="container">
         <div class="title">Registration</div>
         <div class="content">
-            <form action="#">
+            <form id="signupForm" >
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
@@ -237,16 +237,16 @@
                     </div>
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="email" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your number" required>
+                        <input type="tel" placeholder="Enter your number" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Password</span>
                         <div class="wrapper">
-                            <input type="password" placeholder="Enter Password" required>
+                            <input type="password" id="password" placeholder="Enter Password" required>
                             <span class="show-btn"><i class="fas fa-eye"></i></span>
                         </div>
                     </div>
@@ -285,51 +285,13 @@
         </div>
     </div>
     <script>
-            const myemail= "schhunheng.it@gmail.com"
-            const my_pwd = 123
-            var btn_submit = document.getElementById("submit");
-            btn_submit.disabled= true;
-            var email = document.getElementById("email");
-            var password = document.getElementById("password");
-            var error= document.getElementsByClassName("error");
-            var form = document.getElementById("form");
-            form.addEventListener("change",()=>{
-               
-                console.log(" Email : ",email.value)
-                console.log(" Password : ",password.value," :",typeof(password.value))
-               
-                if(email.value===myemail&&password.value==Number(my_pwd)){
-                    btn_submit.disabled= false;
-                }else{
-                    if(email.value!==myemail){
-                        error[0].innerHTML= " wrong user !"
-                    }else{
-                        error[0].innerHTML= ""
-                        btn_submit.disabled= true;
-                    }
-                if(password.value!==Number(my_pwd)){
-                    error[1].innerHTML="Wrong pwd" ;
-                }else{
-                    error[1].innerHTML="true" ;
-                    btn_submit.disabled= true;
-                }
-                }
-            });
-            
-            form.addEventListener("submit",(e)=>{
-                e.preventDefault();
-                console.log(" Email : ",email.value)
-                console.log(" Password : ",password.value," :",typeof(password.value))
-               
-                if(email.value==myemail&&password.value==Number(my_pwd)){
-                    console.log("OK")
-                    
-                }else{
-                    if(email.value!==myemail){
-                    // error[0].innerHTML= " wrong user !"
-                }
-                }
-            });
+        var form = document.getElementById("signupForm");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            localStorage.setItem("email", document.getElementById("email").value);
+            localStorage.setItem("password", document.getElementById("password").value)
+            location.href = "login.html"
+        })
     </script>
 </body>
 
