@@ -170,12 +170,21 @@
 }
 @media only screen and (max-width:1200px) {
     /* For tablets: */
-    .link{
+    .link, .user{
         display: none;
     }
     .logo, .menu-icon{
+        margin-top: 0px;
         padding: 10px 10px;
         width: 50%;
+    }
+    .logo a img{
+        width: 100px;
+    }
+    .menu-icon img{
+        margin-top: 0px;
+        padding: 15px 10px;
+        width: 30px;
     }
     .slider{
         height: 50%;
